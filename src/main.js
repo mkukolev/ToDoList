@@ -7,7 +7,7 @@ export class Todo extends React.Component {
         super(props);
             
         }
-    }
+
 
     render() {
         return(
