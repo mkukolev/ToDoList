@@ -1,6 +1,6 @@
  const path = require('path');
  module.exports = {
-     entry: path.join(__dirname, 'src', 'script.js'),
+     entry: path.join(__dirname , 'script.js'),
      output: {
          path: __dirname + '/public',
          filename:  'todolist.js'
