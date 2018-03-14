@@ -11,9 +11,9 @@ export class TaskList extends React.Component {
 
         });
         return (
-            <ul>
+            <ol>
                 {items}
-            </ul>
+            </ol>
         )
     }
 

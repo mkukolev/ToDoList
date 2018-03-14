@@ -4,17 +4,21 @@ import {TaskList} from './tasklist';
 
 export class Todo extends React.Component {
     constructor(props) {
-        super(props);
-            
+        super();
+        this.state={tasks: props.tasks};
+        this.updateList=this.updateList.bind(this);
         }
-
-
+    updateList(text) {
+        var updTask=this.state.tasks;
+        updTask.push(text);
+        this.setState({tasks: updTask});
+    }
     render() {
         return(
         <div>    
             <h1>Todo List</h1>
-            <AddTask/>
-            <TaskList tasks={this.props.tasks}/>
+            <AddTask updateList={this.updateList}/>
+            <TaskList tasks={this.state.tasks}/>
         </div>
         );
 

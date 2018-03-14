@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Todo} from './src/main';
 
-var tsklist = [];
+var tskList=[];
 
 ReactDOM.render (
-    <Todo tasks={tsklist} />, document.getElementById('todo')
+    <Todo tasks={tskList} />, document.getElementById('todo')
 )
